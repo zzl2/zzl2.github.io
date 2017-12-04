@@ -192,7 +192,7 @@
 <h1 id="理解问题"><a href="#理解问题" class="headerlink" title="理解问题"></a>理解问题</h1><p>​    为了更好的了解数据，我们需要观察每一个变量并去理解他们的意义。从逻辑上考虑他们的关系。为了更好的达到这个效果可以采用建立表格的方式。例如：变量、变量类型、类别、预测、结论、评论。</p>
 <h1 id="因变量的分析"><a href="#因变量的分析" class="headerlink" title="因变量的分析"></a>因变量的分析</h1><p>​    可以用seaborn 来画图看它的 正态分布、有无明显的正偏态、数据显示尖锐。</p>
 <p>这一部分的重点就是以一个非常片面的方式测试SalePrice。我们将会把重点放在：</p>
-<p><img src="/2017/12/04/Comprehensive-data-exploration-with-Python/56.jpg" title="% }</p> <p>矩形图: 峰值和偏度</p> <a id="more"></a> <p>正态概率图:数据分布将会紧紧的贴合代表正态分布的那条线</p> <p>{% asset_img 65.jpg % }</p> <p>好的，SalePrice并不是正态的，它显示出尖峰性，正偏态并且并不贴合那条正态分布的直线。但是没有信息丢失了。一个简单的数据转换就可以解决这个问题。这是个你可以在数据书里学到的很有用的方法：在正偏态分布的情况下，log 转换表现的很好.</p> <h1 id=多变量研究><a href=#多变量研究 class=headerlink title=多变量研究></a>多变量研究</h1><p>​ 首先是和数值型或者类别变量的关系，通过散点图看趋势。通过相关矩阵来看。其实就是通过画图来分析他们之间的关系。</p> <h1 id=数据的清洗><a href=#数据的清洗 class=headerlink title=数据的清洗></a>数据的清洗</h1><p>首先应该考虑的就是缺失值，在我们思考缺失数据时有两个重要的问题：</p> <ul> <li>缺失数据有多普遍？</li> <li>缺失数据是否存在某种规律或者就是随机的？</li> </ul> <p>我们将会考虑扔掉缺失率超过15%的数据。再观察这些缺失值之间的关系，比如说这些缺失值缺少的是同一行的数据，或者其他。</p> <p>​ 其次我们应该烤炉的就是异常值。因为异常值会显著的影响我们的模型，并且能够给我们提供很有价值的信息，一些关于特殊行为的视角。首先利用单一变量分析，先标准化，然后再把它观察。其次就是利用多变量来分析，利用散点图来分析。</p> <p>#哑变量#</p> <p>​ df_train=pd.get_dummies(df_train)</p> <p><a href=https://github.com/zzl2/house_price/blob/master/downcode.py>参考代码</a></p>"></p>
+<p><img src="/2017/12/04/Comprehensive-data-exploration-with-Python/56.jpg" title="% }</p> <p>矩形图: 峰值和偏度</p> <a id="more"></a> <p>正态概率图:数据分布将会紧紧的贴合代表正态分布的那条线</p> <h2 id=asset-img-65-jpg><a href=#asset-img-65-jpg class=headerlink title={% asset_img  65.jpg  % }></a>{% asset_img 65.jpg % }</h2><p>好的，SalePrice并不是正态的，它显示出尖峰性，正偏态并且并不贴合那条正态分布的直线。但是没有信息丢失了。一个简单的数据转换就可以解决这个问题。这是个你可以在数据书里学到的很有用的方法：在正偏态分布的情况下，log 转换表现的很好.</p> <h1 id=多变量研究><a href=#多变量研究 class=headerlink title=多变量研究></a>多变量研究</h1><p>​ 首先是和数值型或者类别变量的关系，通过散点图看趋势。通过相关矩阵来看。其实就是通过画图来分析他们之间的关系。</p> <h1 id=数据的清洗><a href=#数据的清洗 class=headerlink title=数据的清洗></a>数据的清洗</h1><p>首先应该考虑的就是缺失值，在我们思考缺失数据时有两个重要的问题：</p> <ul> <li>缺失数据有多普遍？</li> <li>缺失数据是否存在某种规律或者就是随机的？</li> </ul> <p>我们将会考虑扔掉缺失率超过15%的数据。再观察这些缺失值之间的关系，比如说这些缺失值缺少的是同一行的数据，或者其他。</p> <p>​ 其次我们应该烤炉的就是异常值。因为异常值会显著的影响我们的模型，并且能够给我们提供很有价值的信息，一些关于特殊行为的视角。首先利用单一变量分析，先标准化，然后再把它观察。其次就是利用多变量来分析，利用散点图来分析。</p> <p>#哑变量#</p> <p>​ df_train=pd.get_dummies(df_train)</p> <p><a href=https://github.com/zzl2/house_price/blob/master/downcode.py>参考代码</a></p>"></p>
     </article>
     <!-- 前后页  -->
     <ul class="post-pager">
@@ -263,7 +263,7 @@
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#关于数据的处理"><span class="toc-number">1.</span> <span class="toc-text">关于数据的处理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#理解问题"><span class="toc-number">2.</span> <span class="toc-text">理解问题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#因变量的分析"><span class="toc-number">3.</span> <span class="toc-text">因变量的分析</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#多变量研究"><span class="toc-number">4.</span> <span class="toc-text">多变量研究</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数据的清洗"><span class="toc-number">5.</span> <span class="toc-text">数据的清洗</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#关于数据的处理"><span class="toc-number">1.</span> <span class="toc-text">关于数据的处理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#理解问题"><span class="toc-number">2.</span> <span class="toc-text">理解问题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#因变量的分析"><span class="toc-number">3.</span> <span class="toc-text">因变量的分析</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#asset-img-65-jpg"><span class="toc-number">3.1.</span> <span class="toc-text">{% asset_img 65.jpg % }</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#多变量研究"><span class="toc-number">4.</span> <span class="toc-text">多变量研究</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数据的清洗"><span class="toc-number">5.</span> <span class="toc-text">数据的清洗</span></a></li></ol>
     </div>
     
     <div class="back-top">&#xe639;</div>
@@ -313,8 +313,6 @@
     
     
     
-    
-    
     <div class="total-archive"> Total : 4 </div>
     
     <div class="post-archive">
@@ -327,12 +325,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/04</span><a class="archive-post-title" href= "/2017/12/04/Know-me/" >Know me</a>
+            <span class="archive-post-date">12/04</span><a class="archive-post-title" href= "/2017/12/04/Comprehensive-data-exploration-with-Python/" >Comprehensive data exploration with Python</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/04</span><a class="archive-post-title" href= "/2017/12/04/Comprehensive-data-exploration-with-Python/" >Comprehensive data exploration with Python</a>
+            <span class="archive-post-date">12/04</span><a class="archive-post-title" href= "/2017/12/04/Know-me/" >Know me</a>
         </li>
     
     
@@ -350,9 +348,9 @@
         <div class="sidebar-tags">
     <div class="sidebar-tags-name">
     
-        <span class="sidebar-tag-name"><a href= "#">About Data</a></span>
-    
         <span class="sidebar-tag-name"><a href= "#">my message</a></span>
+    
+        <span class="sidebar-tag-name"><a href= "#">About Data</a></span>
     
     </div>
     <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
