@@ -1,0 +1,16 @@
+<div class="sidebar-tags">
+    <div class="sidebar-tags-name">
+    <% site.tags.each(function (tag) { %>
+        <span class="sidebar-tag-name"><a href= "#"><%- tag.name %></a></span>
+    <% }) %>
+    </div>
+    <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
+    <br/>
+	It's my way
+		<br/>
+   
+    <pre style="color: #888; font-size: 0.6rem;">
+
+    </div> 
+    <div class="sidebar-tag-list"></div>
+</div>
