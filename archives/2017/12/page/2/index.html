@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
     <title>
         
-        Comprehensive data exploration with Python · zzl
+        zzl
         
     </title>
     <link rel="icon" href= /assests/favicon.ico>
@@ -50,22 +50,11 @@
     
 </head>
     
-        <body class="post-body">
-    
     
 <header class="header">
 
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
-    
-    <div class="banner">
-            <div class="blog-title">
-                <a href="/" >This my place</a>
-            </div>
-            <div class="post-title">
-                <a href="#" class="post-name">Comprehensive data exploration with Python</a>
-            </div>
-    </div>
     
     <a class="home-link" href=/>This my place</a>
 </header>
@@ -73,43 +62,21 @@
         <div class="site-intro">
     
     <!-- 主页  -->
-    
-    
-    <!-- 404页  -->
             
-    <div class="site-intro-img" style="background-image: url(http://oumn0o088.bkt.clouddn.com/post-bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/)"></div>
     <div class="site-intro-placeholder"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            Comprehensive data exploration with Python
-            <!-- 404 -->
-            
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
-            
-            <!-- 404 -->
-            
         </p>
         <!-- 文章页meta -->
-        
-            <!-- 文章页标签  -->
-            
-                <div class= post-intro-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-href = About Data>About Data</a>
-    
-</div>
-            
-            <div class="post-intro-meta">
-                <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                <span class="post-intro-time">2017/12/04</span>
-            </div>
         
     </div>
 </div>
@@ -177,53 +144,36 @@
             }
         </script>
         <div class="container container-unloaded">
-            <main class="main post-page">
-    <article class="article-entry">
-        <h1 id="关于数据的处理"><a href="#关于数据的处理" class="headerlink" title="关于数据的处理"></a>关于数据的处理</h1><p> 理解问题</p>
-<p>​    审查每一个变量，并且对他们的意义和对于这个问题的重要性做一个大致的分析。</p>
-<p> 单变量的研究</p>
-<p>​    应该将主要的精力放在因变量上，并且深入的理解这个变量。</p>
-<p>多变量研究</p>
-<p>​    理解因变量和自变量之间的关系。</p>
-<p>基本的数据清洗</p>
-<p>​    对于数据的缺失，异常值和分类变量（文本变量）的处理。</p>
-<p>测试</p>
-<p>​    检查我的数据是否符合机器学习模型的要求，然后测试</p>
-<h1 id="理解问题"><a href="#理解问题" class="headerlink" title="理解问题"></a>理解问题</h1><p>​    为了更好的了解数据，我们需要观察每一个变量并去理解他们的意义。从逻辑上考虑他们的关系。为了更好的达到这个效果可以采用建立表格的方式。例如：变量、变量类型、类别、预测、结论、评论。</p>
-<h1 id="因变量的分析"><a href="#因变量的分析" class="headerlink" title="因变量的分析"></a>因变量的分析</h1><p>​    可以用seaborn 来画图看它的 正态分布、有无明显的正偏态、数据显示尖锐。</p>
-<p>这一部分的重点就是以一个非常片面的方式测试SalePrice。我们将会把重点放在：</p>
-<p><img src="/2017/12/04/Comprehensive-data-exploration-with-Python/56.jpg" title="% }</p> <p>矩形图: 峰值和偏度</p> <a id="more"></a> <p>正态概率图:数据分布将会紧紧的贴合代表正态分布的那条线</p> <p>好的，SalePrice并不是正态的，它显示出尖峰性，正偏态并且并不贴合那条正态分布的直线。但是没有信息丢失了。一个简单的数据转换就可以解决这个问题。这是个你可以在数据书里学到的很有用的方法：在正偏态分布的情况下，log 转换表现的很好.</p> <h1 id=多变量研究><a href=#多变量研究 class=headerlink title=多变量研究></a>多变量研究</h1><p>​ 首先是和数值型或者类别变量的关系，通过散点图看趋势。通过相关矩阵来看。其实就是通过画图来分析他们之间的关系。</p> <h1 id=数据的清洗><a href=#数据的清洗 class=headerlink title=数据的清洗></a>数据的清洗</h1><p>首先应该考虑的就是缺失值，在我们思考缺失数据时有两个重要的问题：</p> <ul> <li>缺失数据有多普遍？</li> <li>缺失数据是否存在某种规律或者就是随机的？</li> </ul> <p>我们将会考虑扔掉缺失率超过15%的数据。再观察这些缺失值之间的关系，比如说这些缺失值缺少的是同一行的数据，或者其他。</p> <p>​ 其次我们应该烤炉的就是异常值。因为异常值会显著的影响我们的模型，并且能够给我们提供很有价值的信息，一些关于特殊行为的视角。首先利用单一变量分析，先标准化，然后再把它观察。其次就是利用多变量来分析，利用散点图来分析。</p> <p>#哑变量#</p> <p>​ df_train=pd.get_dummies(df_train)</p> <p><a href=https://github.com/zzl2/house_price/blob/master/downcode.py>参考代码</a></p>"></p>
-    </article>
-    <!-- 前后页  -->
-    <ul class="post-pager">
-        
-            <li class="next">
-                <a href= "/2017/12/05/sklearn/" title= sklearn >
-                    <span>Next Post</span>
-                    <span>sklearn</span>
-                </a>
-            </li>
-        
-        
-            <li class="previous">
-                <a href= "/2017/12/04/Know-me/" title= Know me >
-                    <span>Previous Post</span>
-                    <span>Know me</span>
-                </a>
-            </li>
-        
-    </ul>
-    <!-- 评论插件 -->
-    <!-- 来必力City版安装代码 -->
-
-<!-- City版安装代码已完成 -->
+            <main class="main index-page">
     
     
-    <!--PC版-->
+    
+        <article class="index-post">
+            <a class="content-show-full" href = "/2017/12/04/My-frist-blog/" >
+                    <h2 class="abstract-title">
+                        
+                        <span>My frist blog</span>
+                    </h2>
+                <div class="abstract-content">
+                    blog 的搭建之路真的好艰辛！学会了一个道理，做人要认真 认真 认真 。其实认真就是真正的高效率
 
-    <!--PC版-->
-
-
+                </div>
+            </a>
+            <div class="abstract-post-meta">
+                <!-- tags  -->
+                
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer"></span><span class="abstract-time">2017/12/04</span>
+                </div>
+            </div>
+        </article>
+    
+    <!-- paginator  -->
+    
+    <nav class="page-nav">
+        <a class="extend prev" rel="prev" href="/archives/2017/12/">#PREV</a><a class="page-number" href="/archives/2017/12/">1</a><span class="page-number current">2</span>
+    </nav>
     
 </main>
             <!-- profile -->
@@ -265,13 +215,6 @@
 </footer>
     </div>
     <!-- toc -->
-    
-    <div class="toc-wrapper">
-        <div class="toc-catalog">
-            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
-        </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#关于数据的处理"><span class="toc-number">1.</span> <span class="toc-text">关于数据的处理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#理解问题"><span class="toc-number">2.</span> <span class="toc-text">理解问题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#因变量的分析"><span class="toc-number">3.</span> <span class="toc-text">因变量的分析</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#多变量研究"><span class="toc-number">4.</span> <span class="toc-text">多变量研究</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数据的清洗"><span class="toc-number">5.</span> <span class="toc-text">数据的清洗</span></a></li></ol>
-    </div>
     
     <div class="back-top">&#xe639;</div>
     <div class="sidebar">
