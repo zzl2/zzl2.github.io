@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
     <title>
         
-        xgboost&#39; · zzl
+        天池-工业 · zzl
         
     </title>
     <link rel="icon" href= /assests/favicon.ico>
@@ -63,7 +63,7 @@
                 <a href="/" >This my place</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">xgboost'</a>
+                <a href="#" class="post-name">天池-工业</a>
             </div>
     </div>
     
@@ -84,7 +84,7 @@
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            xgboost'
+            天池-工业
             <!-- 404 -->
             
         </h1>
@@ -102,7 +102,7 @@
             
             <div class="post-intro-meta">
                 <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                <span class="post-intro-time">2017/12/07</span>
+                <span class="post-intro-time">2017/12/28</span>
             </div>
         
     </div>
@@ -173,26 +173,44 @@
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p>本来认为安装xgboost很简单没想到 又是好多坑~下面这个教程还可以~明天我要看xgboost  </p>
-<p><a href="http://blog.csdn.net/leo_xu06/article/details/52300869" target="_blank" rel="noopener">http://blog.csdn.net/leo_xu06/article/details/52300869</a></p>
-<p>关于这个博客很好说的很详细~</p>
+        <pre><code>本次的天池工业赛的思路。
+分析：
+    1、其特征特别的多，并且没有给出任何的含义，故必须需要进行降维处理。
+    2、本次使用xgboost比较好。
 
+数据的预处理：
+    1、查看缺失值，对于缺失十分之一以上的样本进行丢失处理。
+    2、将数据分为数字型和类别型。
+    3、将需要预测的&apos;Y&apos;的值挑出来。
+    4、训练集和测试集进行拼接
+    5、数值型数据进行填充（用的是均值填充）
+    6、类别型数据进行填充（用的是前向填充）--用众数或者其他的感觉更好
+    7、类别型数据再进行哑编码
+    8、数值型的数据进行标准化
+    9、数据和类别型数据进行拼接（用的是merge）
+    10、根据相关性提取其中与&apos;Y&apos;相关性最高的前2000个数据（提取前1000更好，说明其2000有点多，模型过拟合，数据对于
+    模型来说有很多的噪声）
+应用模型：
+    本次采用的是xgboot的回归的模型，然后利用GV进行调参。
+结果:
+    当数据量为1000时候线上最好成绩是0.0404，而2000时候最好成绩是0.0414。
+</code></pre>
     </article>
     <!-- 前后页  -->
     <ul class="post-pager">
         
             <li class="next">
-                <a href= "/2017/12/08/xgboost原理/" title= xgboost原理 >
+                <a href= "/2018/01/01/2018我来了/" title= 2018我来了 >
                     <span>Next Post</span>
-                    <span>xgboost原理</span>
+                    <span>2018我来了</span>
                 </a>
             </li>
         
         
             <li class="previous">
-                <a href= "/2017/12/06/Fight-for-CET-6/" title= Fight for CET-6 >
+                <a href= "/2017/12/20/我回来了/" title= 我回来了 >
                     <span>Previous Post</span>
-                    <span>Fight for CET-6</span>
+                    <span>我回来了</span>
                 </a>
             </li>
         
