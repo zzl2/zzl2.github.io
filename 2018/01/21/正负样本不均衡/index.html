@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
     <title>
         
-        zzl
+        正负样本不均衡 · zzl
         
     </title>
     <link rel="icon" href= /assests/favicon.ico>
@@ -50,13 +50,22 @@
     
 </head>
     
-        <body class="home-body">
+        <body class="post-body">
     
     
-<header class="header index-header">
+<header class="header">
 
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >This my place</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">正负样本不均衡</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/>This my place</a>
 </header>
@@ -66,17 +75,17 @@
     <!-- 主页  -->
     
     
-    <!-- 文章页  -->
+    <!-- 404页  -->
             
-    <div class="site-intro-img" style="background-image: url(http://oumn0o088.bkt.clouddn.com/intro-desktop.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(http://oumn0o088.bkt.clouddn.com/post-bg.jpg)"></div>
     <div class="site-intro-placeholder"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            This my place
-            <!-- 文章页  -->
+            正负样本不均衡
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
@@ -84,12 +93,17 @@
             <!-- 主页副标题  -->
             
             
-                It's like the wind though the forest
-            
-            <!-- 文章页  -->
+            <!-- 404 -->
             
         </p>
         <!-- 文章页meta -->
+        
+            <!-- 文章页标签  -->
+            
+            <div class="post-intro-meta">
+                <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                <span class="post-intro-time">2018/01/21</span>
+            </div>
         
     </div>
 </div>
@@ -157,218 +171,52 @@
             }
         </script>
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-        <article class="index-post">
-            <a class="content-show-full" href = "/2017/12/05/sklearn/" >
-                    <h2 class="abstract-title">
-                        
-                        <span>sklearn</span>
-                    </h2>
-                <div class="abstract-content">
-                    
-话不多说先上一张大图
-小插曲：我把文件名弄成了sklearn ，然后在调用sklearn的时候估计系统懵逼了不知道我要用谁！！导致我吧数据集又重新安装了在卸载！
-OK ！ 开心的敲代码！
-sklearn的基本操作
-123456789101112131415from sklearn.neighbors import KNeighborsClassifieriris=datasets.load_iris()iris_X=iris.datairis_y=iris.target# print(iris_X[:2,:])# print(iris_y)X_train,X_test,y_train,...
-                </div>
-            </a>
-            <div class="abstract-post-meta">
-                <!-- tags  -->
-                
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer"></span><span class="abstract-time">2017/12/05</span>
-                </div>
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="content-show-full" href = "/2017/12/04/Comprehensive-data-exploration-with-Python/" >
-                    <h2 class="abstract-title">
-                        
-                        <span>Comprehensive data exploration with Python</span>
-                    </h2>
-                <div class="abstract-content">
-                    关于数据的处理 理解问题
-​    审查每一个变量，并且对他们的意义和对于这个问题的重要性做一个大致的分析。
- 单变量的研究
-​    应该将主要的精力放在因变量上，并且深入的理解这个变量。
-多变量研究
-​    理解因变量和自变量之间的关系。
-基本的数据清洗
-​    对于数据的缺失，异常值和分类变量（文本变量）的处理。
-测试
-​    检查我的数据是否符合机器学习模型的要求，然后测试
-理解问题​    为了更好的了解数据，我们需要观察每一个变量并去理解他们的意义。从逻辑上考虑他们的关系。为了更好的达到这个效果可以采用建立表格的方式。例如：变量、变量类型、类别、预测、结论、评论。
-因变...
-                </div>
-            </a>
-            <div class="abstract-post-meta">
-                <!-- tags  -->
-                
-                <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-href = About Data>About Data</a>
-    
-</div>
-                
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer"></span><span class="abstract-time">2017/12/04</span>
-                </div>
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="content-show-full" href = "/2017/12/04/Know-me/" >
-                    <h2 class="abstract-title">
-                        
-                        <span>Know me</span>
-                    </h2>
-                <div class="abstract-content">
-                    Introduction​    I am a postgraduate student studying at Nankai University. I love music ,swimming and playing basketball. Though I am not an outstanding student, I am trying my best to do so. I firmly trust I will be an outstanding man one day in the future.
-Education​    2017-now   Nankai Unive...
-                </div>
-            </a>
-            <div class="abstract-post-meta">
-                <!-- tags  -->
-                
-                <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-href = my message>my message</a>
-    
-</div>
-                
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer"></span><span class="abstract-time">2017/12/04</span>
-                </div>
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="content-show-full" href = "/2017/12/04/不容易/" >
-                    <h2 class="abstract-title">
-                        
-                        <span>不容易</span>
-                    </h2>
-                <div class="abstract-content">
-                    
-有点众里寻他千百度蓦然回首那人却在灯花阑珊处的感觉！
- 可能是 新版本的问题，然而网上的教程又是针对旧版本~~简简单单的弄的加个图好难
-仅仅是在文章里面输入这个就可以了
-####
-记住就好，其实也是反复的尝试才知道。生活何尝不是这样,问题是越想越复杂，然后不经意间，豁然开朗。也许一直不停的努力追求就是那种恍然大悟的感觉！总之 爱生活 爱学习~
+            <main class="main post-page">
+    <article class="article-entry">
+        <h2 id="1-通过过抽样和欠抽样解决样本不均衡"><a href="#1-通过过抽样和欠抽样解决样本不均衡" class="headerlink" title="1 通过过抽样和欠抽样解决样本不均衡"></a>1 通过过抽样和欠抽样解决样本不均衡</h2><p>抽样是解决样本分布不均衡相对简单且常用的方法，包括过抽样和欠抽样两种。</p>
+<p>过抽样</p>
+<p>过抽样（也叫上采样、over-sampling）方法通过增加分类中少数类样本的数量来实现样本均衡，最直接的方法是简单复制少数类样本形成多条记录，这种方法的缺点是如果样本特征少而可能导致过拟合的问题；经过改进的过抽样方法通过在少数类中加入随机噪声、干扰数据或通过一定规则产生新的合成样本，例如SMOTE算法。</p>
+<p>欠抽样</p>
+<p>欠抽样（也叫下采样、under-sampling）方法通过减少分类中多数类样本的样本数量来实现样本均衡，最直接的方法是随机地去掉一些多数类样本来减小多数类的规模，缺点是会丢失多数类样本中的一些重要信息。</p>
+<p>总体上，过抽样和欠抽样更适合大数据分布不均衡的情况，尤其是第一种（过抽样）方法应用更加广泛。</p>
+<h2 id="2-通过正负样本的惩罚权重解决样本不均衡"><a href="#2-通过正负样本的惩罚权重解决样本不均衡" class="headerlink" title="2 通过正负样本的惩罚权重解决样本不均衡"></a>2 通过正负样本的惩罚权重解决样本不均衡</h2><p>通过正负样本的惩罚权重解决样本不均衡的问题的思想是在算法实现过程中，对于分类中不同样本数量的类别分别赋予不同的权重（一般思路分类中的小样本量类别权重高，大样本量类别权重低），然后进行计算和建模。</p>
+<p>使用这种方法时需要对样本本身做额外处理，只需在算法模型的参数中进行相应设置即可。很多模型和算法中都有基于类别参数的调整设置，以scikit-learn中的SVM为例，通过在class_weight : {dict, ‘balanced’}中针对不同类别针对不同的权重，来手动指定不同类别的权重。如果使用其默认的方法balanced，那么SVM会将权重设置为与不同类别样本数量呈反比的权重来做自动均衡处理，计算公式为：n_samples / (n_classes * np.bincount(y))。</p>
+<p>如果算法本身支持，这种思路是更加简单且高效的方法。</p>
+<h2 id="3-通过组合-集成方法解决样本不均衡"><a href="#3-通过组合-集成方法解决样本不均衡" class="headerlink" title="3 通过组合/集成方法解决样本不均衡"></a>3 通过组合/集成方法解决样本不均衡</h2><p>组合/集成方法指的是在每次生成训练集时使用所有分类中的小样本量，同时从分类中的大样本量中随机抽取数据来与小样本量合并构成训练集，这样反复多次会得到很多训练集和训练模型。最后在应用时，使用组合方法（例如投票、加权投票等）产生分类预测结果。</p>
+<p>例如，在数据集中的正、负例的样本分别为100和10000条，比例为1:100。此时可以将负例样本（类别中的大量样本集）随机分为100份（当然也可以分更多），每份100条数据；然后每次形成训练集时使用所有的正样本（100条）和随机抽取的负样本（100条）形成新的数据集。如此反复可以得到100个训练集和对应的训练模型。</p>
+<p>这种解决问题的思路类似于随机森林。在随机森林中，虽然每个小决策树的分类能力很弱，但是通过大量的“小树”组合形成的“森林”具有良好的模型预测能力。</p>
+<p>如果计算资源充足，并且对于模型的时效性要求不高的话，这种方法比较合适。</p>
+<h2 id="4-通过特征选择解决样本不均衡"><a href="#4-通过特征选择解决样本不均衡" class="headerlink" title="4 通过特征选择解决样本不均衡"></a>4 通过特征选择解决样本不均衡</h2><p>上述几种方法都是基于数据行的操作，通过多种途径来使得不同类别的样本数据行记录均衡。除此以外，还可以考虑使用或辅助于基于列的特征选择方法。</p>
+<p>一般情况下，样本不均衡也会导致特征分布不均衡，但如果小类别样本量具有一定的规模，那么意味着其特征值的分布较为均匀，可通过选择具有显著型的特征配合参与解决样本不均衡问题，也能在一定程度上提高模型效果。</p>
+<p>提示 上述几种方法的思路都是基于分类问题解决的。实际上，这种从大规模数据中寻找罕见数据的情况，也可以使用非监督式的学习方法，例如使用One-class SVM进行异常检测。分类是监督式方法，前期是基于带有标签（Label）的数据进行分类预测；而采用非监督式方法，则是使用除了标签以外的其他特征进行模型拟合，这样也能得到异常数据记录。所以，要解决异常检测类的问题，先是考虑整体思路，然后再考虑方法模型。</p>
 
-                </div>
-            </a>
-            <div class="abstract-post-meta">
-                <!-- tags  -->
-                
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer"></span><span class="abstract-time">2017/12/04</span>
-                </div>
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="content-show-full" href = "/2017/12/04/My-frist-blog/" >
-                    <h2 class="abstract-title">
-                        
-                        <span>My frist blog</span>
-                    </h2>
-                <div class="abstract-content">
-                    blog 的搭建之路真的好艰辛！学会了一个道理，做人要认真 认真 认真 。其实认真就是真正的高效率
+    </article>
+    <!-- 前后页  -->
+    <ul class="post-pager">
+        
+        
+            <li class="previous">
+                <a href= "/2018/01/10/plan/" title= plan >
+                    <span>Previous Post</span>
+                    <span>plan</span>
+                </a>
+            </li>
+        
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
 
-                </div>
-            </a>
-            <div class="abstract-post-meta">
-                <!-- tags  -->
-                
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer"></span><span class="abstract-time">2017/12/04</span>
-                </div>
-            </div>
-        </article>
+<!-- City版安装代码已完成 -->
     
-    <!-- paginator  -->
     
-    <nav class="page-nav">
-        <a class="extend prev" rel="prev" href="/">#PREV</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-    </nav>
+    <!--PC版-->
+
+    <!--PC版-->
+
+
     
 </main>
             <!-- profile -->
-            
-            <div class="profile">
-    <img class="profile-avatar" src= /avatar/123.jpg >
-    <div class="profile-name">zzl</div>
-    
-    <div class="profile-signature">
-        witness me
-    </div>
-    
-    
-    <div class="profile-social">
-        
-    
-        
-            
-                <a href="mailto:278706081@qq.com" class="iconfont-archer email" title=email ></a>
-            
-        
-    
-        
-            
-                <a href="//github.com/zzl2" class="iconfont-archer github" target="_blank" title="github"></a>
-            
-        
-    
-        
-            
-                <a href="https://weibo.com/u/3807559402?refer_flag=1001030101_" class="iconfont-archer weibo" target="_blank" title="weibo"></a>
-            
-        
-    
-
-    </div>
-    
-    
-        <div class="friends">
-            <div>FRIENDS</div>
-            
-                <span>
-                    <a href= //www.baidu.com target="_black">friendA</a>
-                </span>
-            
-                <span>
-                    <a href= //www.google.com target="_black">friendB</a>
-                </span>
-            
-        </div>
-    
-    
-        <div class="about-me">
-            <div>
-                <a href = "/about" >ABOUT ME</a>
-            </div>
-        </div>
-    
-</div>
             
         </div>
         <footer class="footer footer-unloaded">
@@ -407,6 +255,13 @@ Education​    2017-now   Nankai Unive...
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper">
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-通过过抽样和欠抽样解决样本不均衡"><span class="toc-number">1.</span> <span class="toc-text">1 通过过抽样和欠抽样解决样本不均衡</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-通过正负样本的惩罚权重解决样本不均衡"><span class="toc-number">2.</span> <span class="toc-text">2 通过正负样本的惩罚权重解决样本不均衡</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-通过组合-集成方法解决样本不均衡"><span class="toc-number">3.</span> <span class="toc-text">3 通过组合/集成方法解决样本不均衡</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-通过特征选择解决样本不均衡"><span class="toc-number">4.</span> <span class="toc-text">4 通过特征选择解决样本不均衡</span></a></li></ol>
+    </div>
     
     <div class="back-top">&#xe639;</div>
     <div class="sidebar">
